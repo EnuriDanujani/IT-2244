@@ -1,0 +1,68 @@
+(I)
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+6 6 6 6 6 6
+
+(II)
+1
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5
+1 2 3 4 5 6
+
+(III)
+
+    *
+   * * 
+  * * *
+ * * * *
+* * * * *
+
+CODE:
+
+echo 'Enter number of Rows: '
+read rows
+echo 'Enter number of Columns: '
+read cols
+
+
+for ((i=1; i<=rows; i++))
+do
+for ((j=1; j<=i; j++))
+do
+echo -n $i " "
+done
+echo ''
+done
+
+echo " "
+
+for ((i=1; i<=rows; i++))
+do
+for ((j=1; j<=i; j++))
+do
+echo -n $j " "
+done
+echo ''
+done
+
+echo " "
+
+for ((i=1; i<=rows; i++))
+do
+    for ((k=1; k<=rows-i; k++))
+    do
+        echo -n " "
+    done
+
+    for ((j=1; j<=i; j++))
+    do
+        echo -n "* "
+    done
+
+    echo ""
+done
