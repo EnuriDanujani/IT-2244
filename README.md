@@ -12,7 +12,7 @@ The child sleeps for 2 seconds and then exits
 The parent waits for the child to finish (wait(&status)).
 
 After the child exits, the parent prints the child's exit status using WEXITSTATUS(status).
-![449327884-a2f0acba-a223-4767-89c3-ada53197e2b4](https://github.com/user-attachments/assets/f59dec56-9f91-4696-b22d-0baa38dee5a4)
+
 
 Parent Creating Two Children The parent creates two child processes.
 First child sleeps for 1 second, Second child sleeps for 3 seconds.
