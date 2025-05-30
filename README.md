@@ -7,7 +7,7 @@ Since there is no fork(), it runs as a single process.
 
 
 Parent-Child Process with Waiting The parent creates a child process using fork().
-The child sleeps for 2 seconds and then exits.
+The child sleeps for 2 seconds and then exits
 
 The parent waits for the child to finish (wait(&status)).
 
